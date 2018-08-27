@@ -1,0 +1,46 @@
+[
+  {
+    "namespace": "cliqzTopBar",
+    "functions": [
+      {
+        "name": "showTopBar",
+        "type": "function",
+        "description": "Display a topbar with specified url and height",
+        "async": true,
+        "parameters": [
+          {
+            "type": "string",
+            "name": "url",
+            "description": "iframe URL"
+          },
+          {
+            "type": "string",
+            "name": "height",
+            "description": "iframe height",
+            "optional": true,
+            "default": "100px"
+          }
+        ]
+      },
+      {
+        "name": "setHeight",
+        "type": "function",
+        "description": "Set height for the topbar",
+        "async": true,
+        "parameters": [
+          {
+            "type": "string",
+            "name": "height",
+            "description": "iframe height to be set"
+          }
+        ]
+      },
+      {
+        "name": "hideTopBar",
+        "type": "function",
+        "description": "Hide topbar",
+        "parameters": []
+      }
+    ]
+  }
+]

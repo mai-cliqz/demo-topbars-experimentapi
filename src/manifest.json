@@ -1,0 +1,26 @@
+{
+  "name": "TopBars",
+  "description": "An experiment api allows you to open/close/resize the pane on the top of the web page",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "applications": {
+		"gecko": {
+			"id": "cliqzTopBar@experiments.addons.mozilla.org"
+		}
+	},
+  "icons": {
+    "16": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "experiment_apis": {
+    "cliqzTopBar": {
+      "schema": "schemas/cliqz-top-bar.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "script": "apis/cliqz-top-bar.bundle.js",
+        "paths": [["cliqzTopBar"]]
+      }
+    }
+  }
+}
